@@ -1,6 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
-import 'package:slidy_carrinho_de_compras/app/modules/shared/models/stores/auth/auth_store.dart';
+import 'package:slidy_carrinho_de_compras/app/shared/stores/auth/auth_store.dart';
 
 class AuthPage extends StatefulWidget {
   final String title;
@@ -8,6 +8,7 @@ class AuthPage extends StatefulWidget {
   @override
   AuthPageState createState() => AuthPageState();
 }
+
 class AuthPageState extends State<AuthPage> {
   final AuthStore store = Modular.get();
 

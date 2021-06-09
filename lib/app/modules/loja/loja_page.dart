@@ -44,13 +44,7 @@ class _LojaPageState extends ModularState<LojaPage, LojaStore> {
             alignment: Alignment.center,
             child: Column(
               mainAxisSize: MainAxisSize.min,
-              children: [
-                Image.asset(
-                  "assets/logo_bwolf.png",
-                  height: 150,
-                ),
-                Text("Think like a wolf")
-              ],
+              children: [Text("Think like a wolf")],
             ),
           ),
           Expanded(
@@ -87,9 +81,7 @@ class _LojaPageState extends ModularState<LojaPage, LojaStore> {
                     subtitle: Text(
                       "Melhor Loja",
                     ),
-                    leading: CircleAvatar(
-                      backgroundImage: AssetImage("assets/${currentItem.logo}"),
-                    ),
+                    leading: CircleAvatar(),
                     trailing: Icon(Icons.arrow_forward_ios),
                   );
                 },
