@@ -5,7 +5,7 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Slidy',
+      title: 'How to Do Loja Stores',
       theme: ThemeData(
         primaryColor: Colors.amber,
         backgroundColor: Colors.red,

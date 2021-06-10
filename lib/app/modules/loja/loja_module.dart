@@ -16,7 +16,7 @@ class LojaModule extends Module {
   @override
   final List<ModularRoute> routes = [
     ChildRoute('/',
-        child: (_, args) => LojaPage(title: "Loja"),
+        child: (_, args) => LojaPage(),
         transition: TransitionType.fadeIn),
   ];
 }

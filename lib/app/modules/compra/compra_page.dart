@@ -2,6 +2,8 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
 import 'package:slidy_carrinho_de_compras/app/modules/produto/models/produto_model.dart';
 
+import 'compra_store.dart';
+
 class CompraPage extends StatefulWidget {
   final ProdutoModel produtoModel;
   final String title;
@@ -16,6 +18,7 @@ class CompraPage extends StatefulWidget {
 }
 
 class CompraPageState extends State<CompraPage> {
+  final CompraStore store = Modular.get();
 
   @override
   Widget build(BuildContext context) {

@@ -11,7 +11,6 @@ class LojaRepository extends Disposable {
     return _data;
   }
 
-  //dispose will be called automatically
   @override
   void dispose() {}
 }

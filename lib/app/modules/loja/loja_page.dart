@@ -6,14 +6,14 @@ import 'loja_store.dart';
 
 class LojaPage extends StatefulWidget {
   final String title;
-  const LojaPage({Key? key, required this.title}) : super(key: key);
+  const LojaPage({Key? key, this.title = "Loja"}) : super(key: key);
 
   @override
   _LojaPageState createState() => _LojaPageState();
 }
 
 class _LojaPageState extends ModularState<LojaPage, LojaStore> {
-  //use 'store' variable to access store
+  final LojaStore store = Modular.get();
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +69,7 @@ class _LojaPageState extends ModularState<LojaPage, LojaStore> {
                   return ListTile(
                     onTap: () {
                       Modular.to.pushNamed(
-                          "/produto/${currentItem.nome}/${currentItem.logo}/${currentItem.id}");
+                          "/produto/${currentItem.nome}/${currentItem.id}");
                     },
                     title: Text(
                       "${currentItem.nome}",

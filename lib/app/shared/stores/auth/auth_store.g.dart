@@ -35,11 +35,11 @@ mixin _$AuthStore on _AuthStoreBase, Store {
       ActionController(name: '_AuthStoreBase');
 
   @override
-  dynamic setUser(UsuarioModel value) {
+  void setUsuario(UsuarioModel value) {
     final _$actionInfo = _$_AuthStoreBaseActionController.startAction(
-        name: '_AuthStoreBase.setUser');
+        name: '_AuthStoreBase.setUsuario');
     try {
-      return super.setUser(value);
+      return super.setUsuario(value);
     } finally {
       _$_AuthStoreBaseActionController.endAction(_$actionInfo);
     }

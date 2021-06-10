@@ -24,7 +24,7 @@ List<ProdutoModel> get _data => [
               "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
           preco: "21,99",
           imagem:
-              "https://hr5v73bt2e7udmky2wffjz92-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/nonagon-style-n9s-designer-pet-products-Dote-Grooming-Set-Colours_result.png"),
+              "https://www.loyalpetzone.com/wp-content/uploads/2016/06/c-8-selector-dogs_174ea262-945c-4e32-a006-f399b93abdf2.png"),
       ProdutoModel(
           lojaId: 1,
           id: 2,

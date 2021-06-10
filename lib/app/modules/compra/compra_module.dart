@@ -12,7 +12,9 @@ class CompraModule extends Module {
 
   @override
   final List<ModularRoute> routes = [
-    ChildRoute('/', child: (_, args) => CompraPage(produtoModel: args.data)),
-    ModuleRoute('/carrinho', module: CarrinhoModule()),
+    ChildRoute(Modular.initialRoute,
+        child: (_, args) => CompraPage(produtoModel: args.data)),
+    ModuleRoute('/carrinho',
+        module: CarrinhoModule(), transition: TransitionType.fadeIn),
   ];
 }

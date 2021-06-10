@@ -14,6 +14,9 @@ class ProdutoPage extends StatefulWidget {
 }
 
 class _ProdutoPageState extends ModularState<ProdutoPage, ProdutoStore> {
+    final ProdutoStore store = Modular.get();
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,11 +31,11 @@ class _ProdutoPageState extends ModularState<ProdutoPage, ProdutoStore> {
       body: Observer(
         builder: (_) {
           return GridView.builder(
-            itemCount: controller.produtos.length,
+            itemCount: store.produtos.length,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, childAspectRatio: .7),
             itemBuilder: (_, index) {
-              var current = controller.produtos[index];
+              var current = store.produtos[index];
               print(current);
               return InkWell(
                 onTap: () {
