@@ -25,7 +25,7 @@ class _ProdutoPageState extends ModularState<ProdutoPage, ProdutoStore> {
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
-            Modular.to.pushNamed("/compra/carrinho/vindo da compra");
+            Modular.to.pushNamed("/carrinho/vindo da compra");
           },
           child: Icon(Icons.shopping_cart, color: Colors.white)),
       body: Observer(
@@ -39,7 +39,7 @@ class _ProdutoPageState extends ModularState<ProdutoPage, ProdutoStore> {
               print(current);
               return InkWell(
                 onTap: () {
-                  Modular.to.pushNamed('/compra', arguments: current);
+                  Modular.to.pushNamed('/detalhesProduto', arguments: current);
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),

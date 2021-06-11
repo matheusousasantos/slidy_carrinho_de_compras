@@ -1,24 +1,23 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
 import 'package:slidy_carrinho_de_compras/app/modules/produto/models/produto_model.dart';
+import 'detalhes_produto_store.dart';
 
-import 'compra_store.dart';
-
-class CompraPage extends StatefulWidget {
+class DetalhesProdutoPage extends StatefulWidget {
   final ProdutoModel produtoModel;
   final String title;
 
-  const CompraPage({
+  const DetalhesProdutoPage({
     Key? key,
-    this.title = 'Compra',
+    this.title = 'DetalhesProduto',
     required this.produtoModel,
   }) : super(key: key);
   @override
-  CompraPageState createState() => CompraPageState();
+  DetalhesProdutoPageState createState() => DetalhesProdutoPageState();
 }
 
-class CompraPageState extends State<CompraPage> {
-  final CompraStore store = Modular.get();
+class DetalhesProdutoPageState extends State<DetalhesProdutoPage> {
+  final DetalhesProdutoStore store = Modular.get();
 
   @override
   Widget build(BuildContext context) {
@@ -143,6 +142,7 @@ class CompraPageState extends State<CompraPage> {
                   height: 40,
                   child: ElevatedButton(
                     onPressed: () {
+                      store.adicionarProdutoNoCarrinho(widget.produtoModel);
                       Modular.to.popAndPushNamed("/carrinho/vindo do compra");
                     },
                     child: Text(

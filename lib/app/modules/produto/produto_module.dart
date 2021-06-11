@@ -26,3 +26,4 @@ class ProdutoModule extends Module {
         transition: TransitionType.fadeIn),
   ];
 }
+

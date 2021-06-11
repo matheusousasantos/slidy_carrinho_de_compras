@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:slidy_carrinho_de_compras/app/modules/compra/carrinho/widgets/carrinho_lista_produtos/carrinho_lista_produtos_widget.dart';
-import 'package:slidy_carrinho_de_compras/app/modules/compra/carrinho/widgets/carrinho_total/carrinho_total_widget.dart';
 import 'carrinho_controller.dart';
+import 'widgets/carrinho_lista_produtos/carrinho_lista_produtos_widget.dart';
+import 'widgets/carrinho_total/carrinho_total_widget.dart';
 
 class CarrinhoPage extends StatefulWidget {
   final String title;
